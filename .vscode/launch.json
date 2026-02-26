@@ -9,8 +9,20 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open Moon orbit.html in Chrome",
-            "file": "${workspaceFolder}/Moon orbit.html"
+            "name": "Launch Active File",
+            "file": "${file}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Play Cards",
+            "file": "${workspaceFolder}/Free code camp project/play cards/play cards.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Newspaper Layout",
+            "file": "${workspaceFolder}/Free code camp project/newspapper/HTML.html"
         }
     ]
 }

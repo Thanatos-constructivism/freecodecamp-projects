@@ -27,7 +27,7 @@ body {
   grid-template-areas: 
     'title title title'
     'feature-article feature-article cover-image'
-    'secondary-article secondary-article cover-image'
+    'secondary-article secondary-article second-image'
     'small-article1 small-article2 small-article3';            
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -134,7 +134,7 @@ img:hover {
 }
 
 .second {
-  grid-area: cover-image;
+  grid-area: second-image;
   width: 40rem;
   height: auto;
 }
