@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css" />
+<title>Newspaper Layout</title>
+</head>
+
+<body>
+<main class="newspaper-layout">
+  <header class="title">
+    <h1>Modern Art Forever</h1>
+    <p class="subtitle-master">
+      A look at the best in modern art from around the world.
+    </p>
+  </header>  
+  <article class="feature-article">
+    <h2>Constructivism Movement</h2>
+    <p>
+      Constructivism is an early twentieth-century art movement founded in 1915 by Vladimir Tatlin and Alexander Rodchenko. Abstract and austere, constructivist art aimed to reflect modern industrial society and urban space. The movement rejected decorative stylization in favour of the industrial assemblage of materials. Constructivists were in favour of art for propaganda and social purposes, and were associated with Soviet socialism, the Bolsheviks, and the Russian avant-garde.
+    </p>
+    <p>
+      Constructivist architecture and art had a great effect on modern art movements of the 20th century, influencing major trends such as the Bauhaus and De Stijl movements. Its influence was widespread, with major effects upon architecture, sculpture, graphic design, industrial design, theatre, film, dance, fashion and, to some extent, music.
+    </p>
+    <p>
+      Constructivism was a post-World War I development of Russian Futurism, and particularly of the 'counter reliefs' of Vladimir Tatlin, which had been exhibited in 1915. The term itself was invented by the sculptors Antoine Pevsner and Naum Gabo, who developed an industrial, angular style of work, while its geometric abstraction owed something to the Suprematism of Kazimir Malevich. Constructivism first appears as a term in Gabo's Realistic Manifesto of 1920. Aleksei Gan used the word as the title of his book Constructivism, printed in 1922.
+    </p>
+    <p>
+      Constructivism as theory and practice was derived largely from a series of debates at the Institute of Artistic Culture (INKhUK) in Moscow, from 1920 to 1922. After deposing its first chairman, Wassily Kandinsky, for his 'mysticism', The First Working Group of Constructivists (including Liubov Popova, Alexander Vesnin, Rodchenko, Varvara Stepanova, and the theorists Aleksei Gan, Boris Arvatov and Osip Brik) would develop a definition of Constructivism as the combination of faktura: the particular material properties of an object, and tektonika, its spatial presence. Initially the Constructivists worked on three-dimensional constructions as a means of participating in industry: the OBMOKhU (Society of Young Artists) exhibition showed these three dimensional compositions, by Rodchenko, Stepanova, Karl Ioganson and the Stenberg brothers. Later the definition would be extended to designs for two-dimensional works such as books or posters, with montage and factography becoming important concepts.
+    </p>
+    </article>
+    <figure class="cover-image">
+    <img 
+    src= "https://artlogic-res.cloudinary.com/w_4000,h_4000,c_limit,f_auto,fl_lossy,q_75/artlogicstorage/osbornesamuel/images/view/04a12f2a6d5687e0d36c29a1bed1380cj.jpg"
+    alt= "Naum Gabo Linear Construction in Space No. 4"
+    loading= "lazy"
+    class="photo-movement"
+    />
+    <figcaption>Linear Construction in Space No. 4 photo</figcaption>
+    </figure>
+    <figure class="cover-image second">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Tatlin%27s_Tower_maket_1919_year.jpg/960px-Tatlin%27s_Tower_maket_1919_year.jpg"
+      alt="Vladimir Tatlin and an assistant in front of the model for the Third International"
+      loading="lazy"
+      class="photo-movement-two"
+    />
+    <figcaption>Vladimir Tatlin Tower photo</figcaption>
+    </figure>
+  <article class="small-article1">
+  <h3>Constructivist Theatre</h3>
+  <p>
+    Constructivist theatre is a 1920s Russian avant-garde movement, pioneering the idea of the stage as a "machine for acting," characterized by functional, industrial-style sets rather than decorative scenery. Led by figures like Vsevolod Meyerhold, it emphasized movement, acrobatics, and, through biomechanics, "building" performances to reflect machine-age dynamism and Socialist ideals. 
+  </p>
+  <figure class="image-article1">
+  <img 
+    src= "https://i.pinimg.com/1200x/da/96/01/da9601d58d495f8522652ce1d7a72d85.jpg"
+    alt= "Meyerhold's production of "The Dawn", c.1920"
+    loading= "lazy"
+    class="photo-theatre"  
+  />
+  <figcaption>Meyerhold's production of "The Dawn" photo</figcaption>
+  </figure>
+  </article>
+  <article class="small-article2">
+  <h3>Constructivist architecture</h3>
+  <p>
+    Constructivist architecture emerged from the wider constructivist art movement. After the Russian Revolution of 1917, it turned its attentions to the new social demands and industrial tasks required of the new regime. Two distinct threads emerged, the first was encapsulated in Antoine Pevsner's and Naum Gabo's Realistic manifesto which was concerned with space and rhythm, the second represented a struggle within the Commissariat for Enlightenment between those who argued for pure art and the Productivists such as Alexander Rodchenko, Varvara Stepanova and Vladimir Tatlin, a more socially oriented group who wanted this art to be absorbed in industrial production.
+  </p>
+  <figure class="image-article2">
+  <img 
+    src="https://i0.wp.com/thecharnelhouse.org/wp-content/uploads/2013/07/fantastic-compositions-1929-1931-composition-5.jpeg?fit=1094%2C1200&ssl=1"
+    alt="Yakov Chernikhov 1929 Constructivist Soviet Architecture"
+    loading="lazy"
+    width="400"
+    class="photo-architect"
+  />
+  <figcaption>Yakov Chernikhov 1929 Constructivist Soviet Architecture photo</figcaption>
+  </figure>
+  </article>
+  <article class="small-article3">
+  <h3>LEF and Constructivist cinema</h3>
+  <p>
+    The Soviet Constructivists organised themselves in the 1920s into the 'Left Front of the Arts', who produced the influential journal LEF, (which had two series, from 1923 to 1925 and from 1927 to 1929 as New LEF). LEF was dedicated to maintaining the avant-garde against the critiques of the incipient Socialist Realism, and the possibility of a capitalist restoration, with the journal being particularly scathing about the 'NEPmen', the capitalists of the period. For LEF the new medium of cinema was more important than the easel painting and traditional narratives that elements of the Communist Party were trying to revive then. Important Constructivists were very involved with cinema, with Mayakovsky acting in the film The Young Lady and the Hooligan (1919), Rodchenko's designs for the intertitles and animated sequences of Dziga Vertov's Kino Eye (1924), and Aleksandra Ekster designs for the sets and costumes of the science fiction film Aelita (1924).
+  </p>
+  <p>
+    The Productivist theorists Osip Brik and Sergei Tretyakov also wrote screenplays and intertitles, for films such as Vsevolod Pudovkin's Storm over Asia (1928) or Victor Turin's Turksib (1929). The filmmakers and LEF contributors Dziga Vertov and Sergei Eisenstein as well as the documentarist Esfir Shub also regarded their fast-cut, montage style of filmmaking as Constructivist. The early Eccentrist movies of Grigori Kozintsev and Leonid Trauberg (The New Babylon, Alone) had similarly avant-garde intentions, as well as a fixation on jazz-age America which was characteristic of the philosophy, with its praise of slapstick-comedy actors like Charlie Chaplin and Buster Keaton, as well as of Fordist mass production. Like the photomontages and designs of Constructivism, early Soviet cinema concentrated on creating an agitating effect by montage and 'making strange'.
+  </p>
+  <figure class="image-article3">
+  <img 
+    src="https://moviessilently.com/wp-content/uploads/2019/11/1f83c-battleship-potemkin-1925-image-70.jpg"
+    alt="Battleship Potemkin (1925)"
+    loading="lazy"
+    width="400"
+    class="photo-cinema"
+  />
+  <figcaption>Battleship Potemkin (1925) photo</figcaption>
+  </figure>
+  </article>
+  <article class="secondary-article">
+  <h2>Naum Gabo</h2>
+  <p> 
+    (5 August [O.S. 24 July] 1890 – 23 August 1977) was an influential sculptor, theorist, and key figure in Russia's post-Revolution avant-garde and the subsequent development of twentieth-century sculpture.
+  </p>
+  <p>
+    His work combined geometric abstraction with a dynamic organization of form in small reliefs and constructions, monumental public sculpture and pioneering kinetic works that assimilated new materials such as nylon, wire, lucite and semi-transparent materials, glass and metal. Responding to the scientific and political revolutions of his age, Gabo led an eventful and peripatetic life, moving to Berlin, Paris, Oslo, Moscow, London, and finally the United States, and within the circles of the major avant-garde movements of the day, including Cubism, Futurism, Constructivism, the Bauhaus, de Stijl and the Abstraction-Création group. Two preoccupations, unique to Gabo, were his interest in representing negative space—"released from any closed volume" or mass—and time.
+  </p>
+  <figure class="image-naum">
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Gabo_Rotterdam_2.jpg"
+    alt="Metal sculpture 'untitled'"
+    loading="lazy"
+    width="400"
+    class="photo-gabo"
+  />
+  <figcaption>Metal sculpture 'untitled' photo</figcaption>
+  </figure>
+  </article>
+</main>
+</body>
+
+</html>

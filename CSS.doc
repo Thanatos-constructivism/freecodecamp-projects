@@ -1,0 +1,140 @@
+:root {
+  --color-1: #1a1a23;
+  --color-2: #f5f5f5;
+  --color-3: #dcdcdc;
+  --color-4: #808080;
+  --figcaption: #0099cc;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+* , *::before , *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-1);
+  color: var(--color-1);
+}
+
+.newspaper-layout {
+  display: grid;
+  grid-template-areas: 
+    'title title title'
+    'feature-article feature-article cover-image'
+    'secondary-article secondary-article cover-image'
+    'small-article1 small-article2 small-article3';            
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  background-color: var(--color-3);
+  margin: 0.5rem;
+  grid-template-rows: auto 1fr 1fr 1fr;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 6rem;
+  text-align: left;
+}
+
+h3 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+}
+
+figcaption {
+  color: var(--figcaption);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem;
+}
+
+img {
+box-shadow: 5px 5px 10px black;
+border: 2px solid black;
+padding: 30px;
+background-color: var(--color-3);
+border-radius: 5px;
+transition: all 0.3s ease;
+max-width: 100%;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.feature-article {
+  grid-area: feature-article;
+  border: 2px solid var(--color-1);
+  padding: 2rem;
+  background-color: var(--color-1);
+  color: var(--color-2);
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px var(--color-4);
+  column-count: 3;
+  column-gap: 2rem;
+  column-rule: 1px solid var(--color-4);
+}
+
+.feature-article h2 {
+  column-span: all;    
+  margin-bottom: 2rem; 
+  text-align: center;
+}
+
+.title {
+  grid-area: title;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+}
+
+.small-article1, .small-article2, .small-article3 {
+  border: 2px solid var(--color-1);
+  grid-row: minmax(8rem , 10rem); 
+  gap: 2rem;
+  padding: 1rem;
+  background-color: var(--color-1);
+  border-radius: 8px;
+  color: var(--color-2);
+}
+
+.secondary-article {
+  grid-area: secondary-article;
+  padding: 2rem;
+  background-color: var(--color-1);
+  border-radius: 8px;
+  color: var(--color-2)
+}
+
+.cover-image {
+  grid-area: cover-image;
+  width: 40rem;
+  height: auto;
+}
+
+.second {
+  grid-area: cover-image;
+  width: 40rem;
+  height: auto;
+}
