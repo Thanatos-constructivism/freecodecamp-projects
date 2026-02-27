@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book Inventory</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<main>
+  <section>
+    <h1>Book Inventory</h1>
+    <table>
+      <thead>
+        <tr class="title">
+          <th>Title</th>
+          <th>Author</th>
+          <th>Category</th>
+          <th>Status</th>
+          <th>Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="read">
+          <th>Dialectic of Enlightenment</th>
+          <td>Theodor W. Adorno(Theodor Ludwig Wiesengrund)</td>
+          <td>Philosophy, social criticism</td>
+          <td><span class="status">Read</span></td>
+          <td><span class="rate three"><span></span><span></span><span></span></span></td>
+        </tr>
+        <tr class="to-read">
+          <th>Philosophy of New Music</th>
+          <td>Theodor W. Adorno(Theodor Ludwig Wiesengrund)</td>
+          <td>Philosophy, musicology, social criticism</td>
+          <td><span class="status">To Read</span></td>
+          <td><span class="rate"><span></span><span></span><span></span></span></td>
+        </tr>  
+        <tr class="in-progress">
+          <th>One-Dimensional Man</th>
+          <td>Herbert Marcuse</td>
+          <td>Capitalism, communism, democracy, industrialization</td>
+          <td><span class="status">In Progress</span></td>
+          <td><span class="rate"><span></span><span></span><span></span></span></td>
+        </tr>  
+        <tr class="read">
+          <th>The Work of Art in the Age of Mechanical Reproduction</th>
+          <td>Walter Bendix Schönflies Benjamin</td>
+          <td>Philosophy, Art History and Art Criticism, Sociology of Art</td>
+          <td><span class="status">Read</span></td>
+          <td><span class="rate three"><span></span><span></span><span></span></span></td>
+        </tr>  
+        <tr class="read">
+          <th>The Philosophical Discourse of Modernity</th>
+          <td>Jürgen Habermas</td>
+          <td>Modernity</td>
+          <td><span class="status">Read</span></td>
+          <td><span class="rate three"><span></span><span></span><span></span></span></td>
+        </tr>    
+      </tbody>    
+    </table>  
+  </section>  
+</main>  
+</body>
+
+</html>
