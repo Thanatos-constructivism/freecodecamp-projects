@@ -10,9 +10,8 @@
   <body>
   <main id="main-doc">
     <nav id="navbar">
-    <header class="title">    
-    <h1>A Comprehensive Guide to Modern Web Development: Principles, Practices, and Pathways</h1>
-    <p>Web development is a dynamic and multifaceted field that combines creativity with technical skill. It's the art and science of building applications that run in your web browser, connecting users to information, services, and each other across the globe. From simple static pages to complex interactive applications, web development has evolved dramatically since the early days of the internet.</p>
+    <header>    
+    <h1>Web Development Guide</h1>
     </header>
     <a class="nav-link" href= "#the_three_pillars:_html,_css,_and_javascript">The Three Pillars: HTML, CSS, and JavaScript</a>
     <a class="nav-link" href= "#the_responsive_revolution">The Responsive Revolution</a>
@@ -103,59 +102,59 @@
     </header>
     <p>Mastering web development starts with understanding fundamental code patterns. Here are five essential snippets that form the backbone of modern web design and will be useful in nearly every project you build.</p>  
     <ol>
-      <li>The CSS Grid Layout System</li>
-      <p>Purpose: Creates a responsive, multi-column structure for page layouts.</p>
-      <code>.container {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 20px;}
-      </code>
-      <p>Why it matters: This establishes a 12-column grid system (a professional standard) that automatically adjusts to screen size while maintaining consistent spacing.</p>
-      <li>The Flexbox Navigation Bar</li>
-      <p>Purpose: Builds horizontally aligned navigation that adapts to different screen sizes.</p>
-      <code>
-        .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;}
-      </code>
-      <p>Why it matters: Flexbox elegantly solves the classic problem of spacing and aligning navigation items without using fragile hacks.</p>
-      <li>The Mobile-First Media Query</li>
-      <p>Purpose: Adapts layouts for mobile devices, following modern responsive design principles.</p>
-      <code>@media (max-width: 768px) {
-        .container {
-        grid-template-columns: 1fr;
-        padding: 1rem;}}
-      </code>
-      <p>Why it matters: This ensures your website provides a great experience on smartphones, which represent most web traffic today.</p>
-      <li>The CSS Reset (Universal Selector)</li>
-      <p>Purpose: Creates a consistent starting point by removing browser inconsistencies.</p>
-      <code>
-        * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;}
-      </code>
-      <p>Why it matters: Different browsers apply different default styles; this reset creates a clean, predictable foundation for your designs.</p>
-      <li>The Modern Button Component</li>
-      <p>Purpose: Creates visually appealing, interactive buttons with hover effects.</p>
-      <code>
-        .btn {
-        background: linear-gradient(45deg, #3498db, #2ecc71);
-        color: white;
-        padding: 12px 24px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        font-weight: 600;
-        transition: transform 0.3s, box-shadow 0.3s;}
-        .btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);}
-      </code>
-      <p>Why it matters: Buttons are the most common interactive element; well-styled buttons significantly improve user experience and conversions.</p>
+      <li>
+        <strong>The CSS Grid Layout System</strong>
+        <p>Purpose: Creates a responsive, multi-column structure for page layouts.</p>
+        <code>.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;}</code>
+      </li>
+      <li>
+        <strong>The Flexbox Navigation Bar</strong>
+        <p>Purpose: Builds horizontally aligned navigation that adapts to different screen sizes.</p>
+        <code>.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;}</code>
+      </li>
+      <li>
+        <strong>The Mobile-First Media Query</strong>
+        <p>Purpose: Adapts layouts for mobile devices, following modern responsive design principles.</p>
+        <code>@media (max-width: 768px) {
+  .container {
+  grid-template-columns: 1fr;
+  padding: 1rem;}}</code>
+      </li>
+      <li>
+        <strong>The CSS Reset (Universal Selector)</strong>
+        <p>Purpose: Creates a consistent starting point by removing browser inconsistencies.</p>
+        <code>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}</code>
+      </li>
+      <li>
+        <strong>The Modern Button Component</strong>
+        <p>Purpose: Creates visually appealing, interactive buttons with hover effects.</p>
+        <code>.btn {
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);}</code>
+      </li>
+    </ol>
+    <div class="insight">
       <p>Key Insight: These five code patterns address approximately 80% of common layout and styling challenges in web development. Rather than memorizing hundreds of properties, focus on understanding how these fundamental patterns work and when to apply each one. Start your projects with these as building blocks, then expand as needed for specific requirements.</p>
-    </ol>  
+    </div>  
+    </main>
   </body>
 </html>

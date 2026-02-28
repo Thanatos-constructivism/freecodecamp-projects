@@ -33,8 +33,25 @@ body {
   gap: 2rem;
   background-color: var(--color-3);
   margin: 0.5rem;
-  grid-template-rows: auto 1fr 1fr 1fr;
   padding: 2rem;
+}
+
+@media (max-width: 900px) {
+  .newspaper-layout {
+    grid-template-areas: 
+      'title'
+      'feature-article'
+      'cover-image'
+      'secondary-article'
+      'second-image'
+      'small-article1'
+      'small-article2'
+      'small-article3';
+    grid-template-columns: 1fr;
+  }
+  .feature-article {
+    column-count: 1 !important;
+  }
 }
 
 h2 {
@@ -127,14 +144,7 @@ img:hover {
   color: var(--color-2)
 }
 
-.cover-image {
-  grid-area: cover-image;
-  width: 40rem;
-  height: auto;
-}
-
-.second {
-  grid-area: second-image;
-  width: 40rem;
+.cover-image, .second {
+  width: 100%;
   height: auto;
 }
