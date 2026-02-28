@@ -21,22 +21,27 @@ h1 {
 }
 
 .title {
-  justify-content: space-between;
-  width: 100vw;
   position: sticky;
+  top: 0;
   z-index: 999;
   background-color: #0a0a23;
   color: #fff;
   padding: 1.25rem;
-  height: 7vh;
+  text-align: left;
 }
 
 table {
   border-collapse: collapse;
-  border: 0;
   width: 100%;
-  position: relative;
   margin: 0;
+  min-width: 600px;
+}
+th, td {
+  padding: 1rem;
+  text-align: left;
+}
+main {
+  overflow-x: auto;
 }
 
 tr[class="read"] {
