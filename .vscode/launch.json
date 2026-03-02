@@ -1,11 +1,6 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
-
         {
             "type": "chrome",
             "request": "launch",
@@ -15,14 +10,44 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Play Cards",
-            "file": "${workspaceFolder}/Free code camp project/play cards/play cards.html"
+            "name": "Personal Portfolio",
+            "file": "${workspaceFolder}/Personal Portfolio/index.html"
         },
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Newspaper Layout",
-            "file": "${workspaceFolder}/Free code camp project/newspapper/HTML.html"
+            "name": "Online Shop",
+            "file": "${workspaceFolder}/online-shop/index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Newspaper Project",
+            "file": "${workspaceFolder}/newspaper-project/index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Playing Cards",
+            "file": "${workspaceFolder}/playing-cards/index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Moon Orbit",
+            "file": "${workspaceFolder}/moon-orbit/index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Book Inventory",
+            "file": "${workspaceFolder}/book-inventory/index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Technical Documentation",
+            "file": "${workspaceFolder}/technical-documentation/index.html"
         }
     ]
 }
