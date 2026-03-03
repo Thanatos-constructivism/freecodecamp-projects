@@ -1,0 +1,193 @@
+:root {
+  --color1: #fff;
+  --color2: #000;
+}
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#navbar {
+  width: 50%;
+  height: 5rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 1rem;
+  left: 50%;
+}
+
+.nav-bar {
+  font-size: 1rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color2);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color1);
+}
+
+a:hover {
+  background-color: #333;
+  color: var(--color1);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+#welcome-section {
+  width: 100%;
+  overflow: visible;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+ 
+h1 {
+    font-size: 4rem;
+    color: var(--color1);
+    margin-top: 5rem;
+    text-align: center;
+    transform: rotate(-7deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    right: 5rem;
+    top: -3rem;
+}
+
+p {
+  font-size: 2rem;
+  color: var(--color1);
+  margin-top: 7rem;
+  text-align: center;
+  transform: rotate(-7deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* .top and .bottom use ::before for the clipped background
+   so the text inside is NOT clipped */
+.top {
+  position: relative;
+  min-height: 20rem;
+  padding: 2rem;
+}
+.top::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color2);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15rem), 0 100%);
+  z-index: 0;
+}
+
+.bottom {
+  position: relative;
+  min-height: 20rem;
+  padding: 2rem;
+  margin-top: calc(5px - 15rem);
+}
+.bottom::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color2);
+  clip-path: polygon(0 15rem, 100% 0, 100% 100%, 0 100%);
+  z-index: 0;
+}
+
+.taper-text {
+  position: relative;
+  width: 100%;
+  max-width: 900px;        /* خودت می‌توانی تغییر دهی */
+  margin: 4rem auto;
+  perspective: 1200px;     /* فقط برای حس عمق فرم مثلثی */
+}
+
+.taper-text h1 {
+  margin: 0;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  color: var(--color1);
+  font-weight: 900;
+  background: transparent;
+  transform: skewX(20deg);   /* حس زاویه مثلثی بدون برش */
+}
+
+/* فرم مثلثی نامرئی (فقط حس شکل) */
+.taper-text h1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+  background: transparent;   /* کاملاً نامرئی */
+  z-index: -1;
+}
+
+/* کوچک شدن تدریجی از چپ به راست — فقط این بخش را تغییر بده */
+.taper-text span:nth-child(1)  { font-size: 15rem; }
+.taper-text span:nth-child(2)  { font-size: 13rem; }
+.taper-text span:nth-child(3)  { font-size: 11rem; }
+.taper-text span:nth-child(4)  { font-size: 9rem; }
+.taper-text span:nth-child(5)  { font-size: 7rem; }
+.taper-text span:nth-child(6)  { font-size: 5rem; }
+.taper-text span:nth-child(7)  { font-size: 3rem; }
+.taper-text span:nth-child(8)  { font-size: 2.4rem; }
+.taper-text span:nth-child(9)  { font-size: 2.1rem; }
+.taper-text span:nth-child(10) { font-size: 1.8rem; }
+.taper-text span:nth-child(11) { font-size: 1.5rem; }
+.taper-text span:nth-child(12) { font-size: 1.2rem; }
+.taper-text span:nth-child(13) { font-size: 0.9rem; }
+.taper-text span:nth-child(14) { font-size: 0.6rem; }
+.taper-text span:nth-child(15) { font-size: 0.3rem; }
+
+.white-line1 {
+  width: 700px;
+  height: 200px;
+  background-color: var(--color1);
+  top: -150px;
+  left: -50px;
+  position: absolute;
+  transform: rotate(-8deg);
+  z-index: 2;
+}
+.white-line2 {
+  width: 700px;
+  height: 5px;
+  background-color: var(--color1);
+  position: absolute;
+  transform: rotate(-38deg);
+  left: 200px;
+  top: 84px;
+  z-index: 2;
+}
