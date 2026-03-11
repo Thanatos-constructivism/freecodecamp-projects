@@ -4,56 +4,15 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Active File",
+            "name": "Chrome: Active File",
+            "file": "${file}",
+            "userDataDir": false
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "name": "Firefox: Active File",
             "file": "${file}"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Personal Portfolio",
-            "file": "${workspaceFolder}/Personal Portfolio/index.html"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Online Shop",
-            "file": "${workspaceFolder}/online-shop/index.html"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Newspaper Project",
-            "file": "${workspaceFolder}/newspaper-project/index.html"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Playing Cards",
-            "file": "${workspaceFolder}/playing-cards/index.html"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Moon Orbit",
-            "file": "${workspaceFolder}/moon-orbit/index.html"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Book Inventory",
-            "file": "${workspaceFolder}/book-inventory/index.html"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Technical Documentation",
-            "file": "${workspaceFolder}/technical-documentation/index.html"
-        }
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "personal portfolio",
-            "file": "${workspaceFolder}/personal-portfolio/index.html"
         }
     ]
 }
