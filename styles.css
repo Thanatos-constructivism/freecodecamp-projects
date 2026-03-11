@@ -1,0 +1,458 @@
+:root {
+  --color1: #fff;
+  --color2: #000;
+}
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  font-family: serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#navbar {
+  width: 50%;
+  height: 5rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 1rem;
+  left: 50%;
+  z-index: 10;
+}
+
+.nav-bar {
+  font-size: 1rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color2);
+  box-shadow: 4px 4px 2px #666;
+}
+
+a:not(.constructivism) {
+  text-decoration: none;
+  color: var(--color1);
+}
+
+a:hover:not(.constructivism):not(#work a) {
+  background-color: #333;
+  color: var(--color1);
+}
+
+img:not(.sketch-list) {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+#welcome-section {
+  width: 100%;
+  overflow: visible;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+ 
+h1 {
+    font-size: 4rem;
+    color: var(--color1);
+    margin-top: 5rem;
+    text-align: center;
+    transform: rotate(-7deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    right: 5rem;
+    top: -3rem;
+}
+
+p {
+  font-size: 2rem;
+  color: var(--color1);
+  margin-top: 7rem;
+  text-align: center;
+  transform: rotate(-7deg);
+  position: relative;
+  z-index: 1;
+}
+
+.constructivism {
+  color: red;
+  text-decoration: none;
+}
+
+.top {
+  position: relative;
+  min-height: 33.2rem;
+  max-height: 33.2rem;
+  padding: 2rem;
+}
+.top::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color2);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15rem), 0 100%);
+  z-index: 0;
+}
+
+.bottom {
+  position: relative;
+  min-height: 20rem;
+  padding: 2rem;
+  margin-top: calc(5px - 15rem);
+}
+.bottom::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color2);
+  clip-path: polygon(0 15rem, 100% 0, 100% 100%, 0 100%);
+  z-index: 0;
+}
+
+.taper-text {
+  position: relative;
+  width: 100%;
+  max-width: 900px;        
+  margin: 4rem auto;
+  perspective: 1200px;     
+}
+
+.taper-text h1 {
+  margin: 0;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  color: var(--color1);
+  font-weight: 900;
+  background: transparent;
+  transform: skewX(20deg); 
+}
+
+.taper-text h1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+  background: transparent;   
+  z-index: -1;
+}
+
+.taper-text span:nth-child(1)  { 
+  font-size: 15rem;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: 5rem;
+}
+
+.taper-text span:nth-child(2)  { 
+  font-size: 13rem;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: 4.5rem;
+  left: 13.5rem;
+}
+
+.taper-text span:nth-child(3)  { 
+  font-size: 11rem;
+  transform: rotate(-15deg);
+  position: absolute;
+  left: 27rem;
+  top: 15rem;
+}
+
+.taper-text span:nth-child(4)  { 
+  font-size: 11rem;
+  transform: rotate(75deg);
+  position: absolute;
+  top: -2rem;
+  left: 20rem;
+}
+
+.taper-text span:nth-child(5)  { 
+  font-size: 7rem;
+  transform: rotate(75deg);
+  position: absolute;
+  top: 2rem;
+  left: 25rem;
+}
+
+.taper-text span:nth-child(6)  { 
+  font-size: 8rem; 
+  transform: rotate(75deg);
+  position: absolute;
+  top: 6.8rem;
+  left: 19.5rem;
+}
+.taper-text span:nth-child(7)  { 
+  font-size: 3rem;
+  transform: rotate(75deg);
+  position: absolute;
+  top: 15rem;
+  left: 40rem;
+}
+.taper-text span:nth-child(8)  { 
+  font-size: 5rem;
+  transform: rotate(-6deg);
+  position: absolute;
+  top: 18rem;
+  left: 25rem;
+}
+.taper-text span:nth-child(9)  { 
+  font-size: 8rem;
+  transform: rotate(-6deg);
+  position: absolute;
+  top: 14.6rem;
+  left: 30rem;
+}
+.taper-text span:nth-child(10) { 
+  font-size: 15rem;
+  transform: rotate(-6deg);
+  position: absolute;
+  top: 7.5rem;
+  left: 36rem;
+}
+.taper-text span:nth-child(11) { 
+  font-size: 18rem;
+  transform: rotate(-6deg);
+  position: absolute;
+  top: 3.7rem;
+  left: 45rem;
+}
+.taper-text span:nth-child(12) { 
+  font-size: 20rem;
+  transform: rotate(-4deg);
+  position: absolute;
+  top: 0.5rem;
+  left: 57rem;
+}
+.taper-text span:nth-child(13) { 
+  font-size: 22rem;
+  transform: rotate(-4deg);
+  position: absolute;
+  top: -2.5rem;
+  left: 69rem;
+}
+.taper-text span:nth-child(14) { 
+  font-size: 27rem;
+  transform: rotate(-4deg);
+  position: absolute;
+  top: -8.5rem;
+  left: 78rem;  
+}
+.taper-text span:nth-child(15) { 
+  font-size: 23rem;
+  transform: rotate(-4deg);
+  position: absolute;
+  top: -7rem;
+  left: 95rem;
+}
+
+.white-line1 {
+  width: 700px;
+  height: 200px;
+  background-color: var(--color1);
+  top: -150px;
+  left: -50px;
+  position: absolute;
+  transform: rotate(-8deg);
+  z-index: 3;
+}
+
+.white-line2 {
+  width: 700px;
+  height: 5px;
+  background-color: var(--color1);
+  position: absolute;
+  transform: rotate(-38deg);
+  left: 20rem;
+  top: 8.4rem;
+  z-index: 3;
+}
+
+#work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 2rem;
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+}  
+
+#project-section h2 {
+  color: var(--color1);
+  text-align: center;
+  font-size: 4rem;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  margin: 0;
+  background-color: var(--color2);
+}
+
+#work a {
+  color: var(--color2);
+  font-size: 2rem;
+  text-decoration: none
+}
+
+#work > div {
+  background-color: whitesmoke;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 2px 4px 4px #999;
+  transition: 0.4s;
+}
+
+#work > div:hover {
+  background-color: #999;
+  transform: scale(0.9);
+  box-shadow: 2px 4px 2px #999;
+}
+
+#work figure {
+  display: flex;
+  flex-direction: column;  
+  gap: 2rem;
+  align-items: center;     
+  margin: 0;
+}
+
+#work figure a:first-child {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%; 
+}  
+
+#work figure img {
+  width: calc(50% - 0.5rem);  
+  max-width: 100%;              
+  height: auto;
+  object-fit: cover;            
+  border-radius: 8px;          
+}
+
+#sketch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color2);
+  min-height: 100vh;
+  perspective: 250rem;  
+  margin: 2rem 0; 
+  padding-bottom: 15rem;  
+}
+
+#sketch h2 {
+  color: var(--color1);
+  text-align: center;
+  font-size: 4rem;
+  padding-bottom: 5rem;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: gallery 40s linear infinite;
+  cursor: pointer;
+}
+
+.container span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 60deg)) translateZ(400px);
+}
+
+.container span img {
+  position: absolute;
+  width: 100%;        
+  height: 100%;       
+  border-radius: 1rem;
+  border: 4px ridge #ccc;
+  object-fit: contain; 
+  background-color: #222; 
+  transition: transform 0.5s;
+}
+
+.container span img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes gallery {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+.container:hover {
+  animation-play-state: paused;
+}
+
+.lightpanel {
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+}
+
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lightbox-modal .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lightbox-modal .close:hover {
+  color: #ccc;
+}
+
