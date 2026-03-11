@@ -4,6 +4,7 @@ Each project is independent and has its own directory. You can view them at the 
 
 ## 🚀 Independent Projects
 
+-   **[Personal Portfolio](https://Thanatos-constructivism.github.io/freecodecamp-projects/personal-portfolio/)**
 -   **[Newspaper Layout](https://Thanatos-constructivism.github.io/freecodecamp-projects/newspaper-project/)**
 -   **[Philosophy Online Shop](https://Thanatos-constructivism.github.io/freecodecamp-projects/online-shop/)**
 -   **[Playing Cards Deck](https://Thanatos-constructivism.github.io/freecodecamp-projects/playing-cards/)**
