@@ -1,0 +1,82 @@
+:roots {
+  --color-background: #000;
+  --color-first: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: relative;
+  background-color: #000;
+}
+
+.earth {
+  position: absolute;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ed/Earth-EpicDay260-20150917.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.moon {
+  position: absolute;
+  background-image: url("https://images.pexels.com/photos/596134/pexels-photo-596134.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.orbit {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit 5s linear infinite;
+}
+  
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}  
