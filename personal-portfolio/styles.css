@@ -8,6 +8,7 @@
 :root {
   --color1: #fff;
   --color2: #000;
+  --shadow: #999;
 }
 
 html {
@@ -187,7 +188,7 @@ h1 {
   position: absolute;
   top: 5.4rem;
   left:-1rem;
-  text-shadow: 3px 3px 2px #999;
+  text-shadow: 3px 3px 2px var(--shadow);
 }
 
 .taper-text span:nth-child(2)  { 
@@ -196,7 +197,7 @@ h1 {
   position: absolute;
   top: 4.5rem;
   left: 13.5rem;
-  text-shadow: 3px 3px 2px #999;
+  text-shadow: 3px 3px 2px var(--shadow);
 }
 
 .taper-text span:nth-child(3)  { 
@@ -205,7 +206,7 @@ h1 {
   position: absolute;
   left: 27rem;
   top: 15rem;
-  text-shadow: 3px 3px 2px #999;
+  text-shadow: 3px 3px 2px var(--shadow);
 }
 
 .taper-text span:nth-child(4)  { 
@@ -214,7 +215,7 @@ h1 {
   position: absolute;
   top:0rem;
   left: 20rem;
-  text-shadow: 3px 3px 2px #999;
+  text-shadow: 3px 3px 2px var(--shadow);
 }
 
 .taper-text span:nth-child(5)  { 
@@ -223,7 +224,7 @@ h1 {
   position: absolute;
   top: 2rem;
   left: 25rem;
-  text-shadow: 3px 3px 2px #999;
+  text-shadow: 3px 3px 2px var(--shadow);
 }
 
 .taper-text span:nth-child(6)  { 
@@ -232,7 +233,7 @@ h1 {
   position: absolute;
   top: 7.4rem;
   left: 19.5rem;
-  text-shadow: 3px 3px 2px #999;
+  text-shadow: 3px 3px 2px var(--shadow);
 }
 .taper-text span:nth-child(7)  { 
   font-size: 2rem;
@@ -247,7 +248,7 @@ h1 {
   position: absolute;
   top: 16.4rem;
   left: 23rem;
-  text-shadow: 3px 3px 2px #999;
+  text-shadow: 3px 3px 2px var(--shadow);
 }
 .taper-text span:nth-child(9)  { 
   font-size: 9rem;
@@ -255,15 +256,16 @@ h1 {
   position: absolute;
   top: 14rem;
   left: 28.5rem;
-  text-shadow: 3px 3px 2px #999;
+  text-shadow: 3px 3px 2px var(--shadow);
 }
+
 .taper-text span:nth-child(10) { 
   font-size: 14rem;
   transform: rotate(-6deg);
   position: absolute;
   top: 8.6rem;
   left: 35rem;
-  text-shadow: 3px 3px 2px #999;
+  text-shadow: 3px 3px 2px var(--shadow);
 }
 .taper-text span:nth-child(11) { 
   font-size: 18rem;
@@ -271,7 +273,8 @@ h1 {
   position: absolute;
   top: 3.7rem;
   left: 44rem;
-  text-shadow: 3px 3px 2px #999
+  text-shadow: 3px 3px 2px var(--shadow);
+#999
 }
 .taper-text span:nth-child(12) { 
   font-size: 20rem;
@@ -279,7 +282,7 @@ h1 {
   position: absolute;
   top: 0.5rem;
   left: 57rem;
-  text-shadow: 3px 3px 2px #999
+  text-shadow: 3px 3px 2px var(--shadow);
 }
 .taper-text span:nth-child(13) { 
   font-size: 22rem;
@@ -287,7 +290,7 @@ h1 {
   position: absolute;
   top: -2.5rem;
   left: 69rem;
-  text-shadow: 3px 3px 2px #999
+  text-shadow: 3px 3px 2px var(--shadow);
 }
 .taper-text span:nth-child(14) { 
   font-size: 27rem;
@@ -295,7 +298,7 @@ h1 {
   position: absolute;
   top: -8.5rem;
   left: 78rem;
-  text-shadow: 3px 3px 2px #999 
+  text-shadow: 3px 3px 2px var(--shadow);
 }
 .taper-text span:nth-child(15) { 
   font-size: 23rem;
@@ -303,7 +306,7 @@ h1 {
   position: absolute;
   top: -7rem;
   left: 95rem;
-  text-shadow: 3px 3px 2px  #999;
+  text-shadow: 3px 3px 2px var(--shadow);
 }
 
 .white-line1 {
@@ -513,6 +516,30 @@ h1 {
   color: #ccc;
 }
 
+@media (max-width: 900px) {
+  .taper-text span { font-size: 4rem !important; position: static !important; 
+    transform: none !important; display: inline-block; }
+  
+  .taper-text h1 { flex-wrap: wrap; white-space: normal; transform: none; 
+    font-size: 3rem; right: 0; top: 0; }
 
+  #navbar { left: 0; width: 100%; justify-content: space-around; }
 
+  .white-line1, .white-line2, .white-line3 { display: none; }
 
+  #work { grid-template-columns: 1fr; }
+  .bottom p {margin-top: 8rem;}
+}
+
+@media (max-width: 480px) {
+  #project-section h2 { font-size: 2rem; }
+  .bottom p { font-size: 2rem; margin-top: 1rem; }
+  .container { width: 250px; height: 250px; }
+  .container span { transform: rotateY(calc(var(--i) * 60deg)) translateZ(250px); }
+}
+
+@media (max-width: 768px) {
+  .bottom p {
+    margin-top: 15rem;  
+  }
+}
