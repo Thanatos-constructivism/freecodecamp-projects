@@ -96,7 +96,7 @@ h1 {
     -webkit-text-stroke: 0.03em #000;  
     text-shadow: 
         4px 4px 0 #333,               
-        6px 6px 0 #222,                
+        6px 6px 0 #222,;                
     letter-spacing: 2px;              
     line-height: 1.1;
 }
