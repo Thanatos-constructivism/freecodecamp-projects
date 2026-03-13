@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Floorlight';
+  src: url('./fonts/Floorlight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --color1: #fff;
   --color2: #000;
@@ -45,13 +52,14 @@ body {
   box-shadow: 4px 4px 2px #666;
 }
 
-a:not(.constructivism) {
-  text-decoration: none;
-  color: var(--color1);
+.nav-bar:hover {
+  transform: scale(0.9);
+  color: orange;
+  cursor: pointer
 }
 
-a:hover:not(.constructivism):not(#work a) {
-  background-color: #333;
+a:not(.constructivism):not(.social-item) {
+  text-decoration: none;
   color: var(--color1);
 }
 
@@ -70,7 +78,7 @@ img:not(.sketch-list) {
  
 h1 {
     font-size: 4rem;
-    color: var(--color1);
+    color: whitesmoke !important;
     margin-top: 5rem;
     text-align: center;
     transform: rotate(-7deg);
@@ -81,9 +89,18 @@ h1 {
     z-index: 1;
     right: 5rem;
     top: -3rem;
+    font-family: 'Playfair Display', Georgia, serif; 
+    font-size: 80px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.03em #000;  
+    text-shadow: 
+        4px 4px 0 #333,               
+        6px 6px 0 #222,                
+    letter-spacing: 2px;              
+    line-height: 1.1;
 }
 
-p {
+.bottom p {
   font-size: 2rem;
   color: var(--color1);
   margin-top: 7rem;
@@ -96,6 +113,12 @@ p {
 .constructivism {
   color: red;
   text-decoration: none;
+  transition: 0.4s;
+}
+
+.constructivism:hover {
+  color: orange;
+  cursor: pointer;
 }
 
 .top {
@@ -162,7 +185,9 @@ p {
   font-size: 15rem;
   transform: rotate(-15deg);
   position: absolute;
-  top: 5rem;
+  top: 5.4rem;
+  left:-1rem;
+  text-shadow: 3px 3px 2px #999;
 }
 
 .taper-text span:nth-child(2)  { 
@@ -171,6 +196,7 @@ p {
   position: absolute;
   top: 4.5rem;
   left: 13.5rem;
+  text-shadow: 3px 3px 2px #999;
 }
 
 .taper-text span:nth-child(3)  { 
@@ -179,14 +205,16 @@ p {
   position: absolute;
   left: 27rem;
   top: 15rem;
+  text-shadow: 3px 3px 2px #999;
 }
 
 .taper-text span:nth-child(4)  { 
-  font-size: 11rem;
+  font-size: 9rem;
   transform: rotate(75deg);
   position: absolute;
-  top: -2rem;
+  top:0rem;
   left: 20rem;
+  text-shadow: 3px 3px 2px #999;
 }
 
 .taper-text span:nth-child(5)  { 
@@ -195,49 +223,55 @@ p {
   position: absolute;
   top: 2rem;
   left: 25rem;
+  text-shadow: 3px 3px 2px #999;
 }
 
 .taper-text span:nth-child(6)  { 
-  font-size: 8rem; 
+  font-size: 7rem; 
   transform: rotate(75deg);
   position: absolute;
-  top: 6.8rem;
+  top: 7.4rem;
   left: 19.5rem;
+  text-shadow: 3px 3px 2px #999;
 }
 .taper-text span:nth-child(7)  { 
-  font-size: 3rem;
+  font-size: 2rem;
   transform: rotate(75deg);
   position: absolute;
-  top: 15rem;
-  left: 40rem;
+  top: 16rem;
+  left: 42rem;
 }
 .taper-text span:nth-child(8)  { 
-  font-size: 5rem;
+  font-size: 7rem;
   transform: rotate(-6deg);
   position: absolute;
-  top: 18rem;
-  left: 25rem;
+  top: 16.4rem;
+  left: 23rem;
+  text-shadow: 3px 3px 2px #999;
 }
 .taper-text span:nth-child(9)  { 
-  font-size: 8rem;
+  font-size: 9rem;
   transform: rotate(-6deg);
   position: absolute;
-  top: 14.6rem;
-  left: 30rem;
+  top: 14rem;
+  left: 28.5rem;
+  text-shadow: 3px 3px 2px #999;
 }
 .taper-text span:nth-child(10) { 
-  font-size: 15rem;
+  font-size: 14rem;
   transform: rotate(-6deg);
   position: absolute;
-  top: 7.5rem;
-  left: 36rem;
+  top: 8.6rem;
+  left: 35rem;
+  text-shadow: 3px 3px 2px #999;
 }
 .taper-text span:nth-child(11) { 
   font-size: 18rem;
   transform: rotate(-6deg);
   position: absolute;
   top: 3.7rem;
-  left: 45rem;
+  left: 44rem;
+  text-shadow: 3px 3px 2px #999
 }
 .taper-text span:nth-child(12) { 
   font-size: 20rem;
@@ -245,6 +279,7 @@ p {
   position: absolute;
   top: 0.5rem;
   left: 57rem;
+  text-shadow: 3px 3px 2px #999
 }
 .taper-text span:nth-child(13) { 
   font-size: 22rem;
@@ -252,13 +287,15 @@ p {
   position: absolute;
   top: -2.5rem;
   left: 69rem;
+  text-shadow: 3px 3px 2px #999
 }
 .taper-text span:nth-child(14) { 
   font-size: 27rem;
   transform: rotate(-4deg);
   position: absolute;
   top: -8.5rem;
-  left: 78rem;  
+  left: 78rem;
+  text-shadow: 3px 3px 2px #999 
 }
 .taper-text span:nth-child(15) { 
   font-size: 23rem;
@@ -266,6 +303,7 @@ p {
   position: absolute;
   top: -7rem;
   left: 95rem;
+  text-shadow: 3px 3px 2px  #999;
 }
 
 .white-line1 {
@@ -371,7 +409,7 @@ p {
   color: var(--color1);
   text-align: center;
   font-size: 4rem;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
 }
 
 .container {
@@ -402,10 +440,6 @@ p {
   transition: transform 0.5s;
 }
 
-.container span img:hover {
-  transform: scale(1.1);
-}
-
 @keyframes gallery {
   0% { transform: rotateY(0deg); }
   100% { transform: rotateY(360deg); }
@@ -417,8 +451,31 @@ p {
 
 .lightpanel {
   width: 100%;
-  height: 500px;
+  min-height: 250px;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  padding: 3rem;
+}
+
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-item p {
+  font-size: 2rem;
+  color: var(--color2);
+  margin: 0;
+  font-weight: bold;
+}
+
+.social-item a:hover {
+  transform: scale(0.8);
 }
 
 .lightbox-modal {
@@ -455,4 +512,7 @@ p {
 .lightbox-modal .close:hover {
   color: #ccc;
 }
+
+
+
 
